@@ -24,16 +24,16 @@ BypassFilter = create(auto_bypass)
 
 @Bypass.on_message(command('start'))
 async def start_msg(client, message):
-    await message.reply(f'''<b><i>FZ Bypass Bot!</i></b>
+    await message.reply(f'''<b><i>SPARK Bypass Bot!</i></b>
     
     <i>A Powerful Elegant Multi Threaded Bot written in Python... which can Bypass Various Shortener Links, Scrape links, and More ... </i>
     
     <i><b>Bot Started {convert_time(time() - BOT_START)} ago...</b></i>
 
-🛃 <b>Use Me Here :</b> @CyberPunkGrp <i>(Bypass Topic)</i>''',
+ <b>BY :</b> <i>@SPA4KBRO</i>''',
         quote=True,
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton('🎓 Dev', url='https://t.me/SilentDemonSD'), InlineKeyboardButton('🔍 Deploy Own', url="https://github.com/SilentDemonSD/FZBypassBot")]
+            [InlineKeyboardButton('👨‍💻 Dev', url='https://t.me/SPA4KBRO')]
             ])
     )
 
@@ -48,9 +48,9 @@ async def bypass_check(client, message):
         txt = message.text
         entities = message.entities
     else:
-        return await message.reply('<i>No Link Provided!</i>')
+        return await message.reply('<i>❌ No Link Provided!</i>')
     
-    wait_msg = await message.reply("<i>Bypassing...</i>")
+    wait_msg = await message.reply("<i>♻️ Bypassing...</i>")
     start = time()
 
     link, tlinks, no = '', [], 0
